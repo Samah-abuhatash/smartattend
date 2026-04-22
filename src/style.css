@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    color-scheme: light;
+  }
+  html,
+  body {
+    height: 100%;
+  }
+  body {
+    @apply bg-white text-slate-800 antialiased;
+  }
+  *:focus-visible {
+    @apply outline-none ring-2 ring-accent-500/70 ring-offset-2 ring-offset-white;
+  }
+}
+
+@layer components {
+  .container-page {
+    @apply mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8;
+  }
+  .card {
+    @apply rounded-2xl border border-slate-200 bg-white shadow-soft;
+  }
+  .card-muted {
+    @apply rounded-2xl border border-slate-200 bg-surface-50;
+  }
+  .subtle-grid {
+    background-image: radial-gradient(rgba(15, 22, 63, 0.08) 1px, transparent 1px);
+    background-size: 22px 22px;
+  }
+}
+
