@@ -144,4 +144,3 @@ Accounts:
 - This version has no real backend integration.
 - Data is simulated and persisted in browser `localStorage`.
 - Code structure is ready for future backend integration.
-
